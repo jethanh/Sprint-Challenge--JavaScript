@@ -29,14 +29,23 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your team lead
 
 1. Describe the biggest difference between `.forEach` & `.map`.
+    -map returns a new array whereas forEach does not.
 
 2. What is the difference between a function and a method?
+    -Both are functions, but a method is a function which is a property of an object.
 
 3. What is closure?
+    -A closure is a way of accessing outer scopes from a function.
 
 4. Describe the four rules of the 'this' keyword.
+    -Window Binding - refers to the global object
+    -Implicit Binding - refers to what is before the dot.
+    -Explicit Binding - when using call or apply, this is defined.
+    -New Binding - constructor function, this refers to specific instance of object in constructor.
+
 
 5. Why do we need super() in an extended class?
+    -to inherit the attributes of the parent class.
 
 ## Project Set up
 
