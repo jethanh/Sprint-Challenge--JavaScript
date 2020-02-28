@@ -16,12 +16,12 @@ function consume (a, b, cb) {
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
 
-function add (x,y) {
-  return x + y;
+function add (num1, num2) {
+  return num1 + num2;
 }
 
-function multiply (x,y) {
-  return x * y;
+function multiply (num1, num2) {
+  return num1 * num2;
 }
 
 function greeting (firstName, lastName) {
@@ -40,7 +40,7 @@ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice t
 
 // Explain in your own words why nestedfunction can access the variable internal.
 
-// Explanation: 
+// Explanation: Because it can reach outside of it's function to access variables which are declared on a broader scope like global scope.
 
 
 const external = "I'm outside the function";
