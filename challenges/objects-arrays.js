@@ -124,12 +124,9 @@ const zooAnimals = [
 The zoos want to display both the scientific name and the animal name in front of the habitats. Populate the displayNames array with only the animal_name and scientific_name of each animal. displayNames will be an array of strings, and each string should follow this pattern: "Name: Jackal, asiatic, Scientific: Canis aureus."
 
 */
-const displayNames = [];
+let displayNames = [];
 
- function bothNames(x) {
-  x.forEach (x => displayNames.push(`Name: ${x.animal_name}, Scientific: ${x.scientific_name}`))
-  return displayNames;
-} 
+zooAnimals.forEach (zooAnimals => displayNames.push(`Name: ${zooAnimals.animal_name}, Scientific: ${zooAnimals.scientific_name}`));
 
 /* zooAnimals.forEach(function(item){
   displayNames.push(`Name: ${item.animal_name}, Scientific: ${item.scientific_name}`)
@@ -167,7 +164,7 @@ The zoos need to know their total animal population across the United States. Fi
 */
 
 function totalPop(zooAnimals) {
-  return zooAnimals.reduce((sum, zooAnimals) => sum + zooAnimals.population, 0);
+  return zooAnimals.reduce((x, zooAnimals) => x + zooAnimals.population, 0);
 }
 
 console.log(totalPop(zooAnimals));
