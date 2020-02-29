@@ -163,8 +163,8 @@ The zoos need to know their total animal population across the United States. Fi
 
 */
 
-function totalPop(zooAnimals) {
-  return zooAnimals.reduce((x, zooAnimals) => x + zooAnimals.population, 0);
+function totalPop(x) {
+  return x.reduce((sum, x) => sum + x.population, 0);
 }
 
 console.log(totalPop(zooAnimals));
